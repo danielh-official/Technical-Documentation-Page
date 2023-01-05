@@ -1,41 +1,106 @@
-body {
-    max-width: max-content;
-    margin: auto;
+#main-doc {
+    margin-left: 200px;
+    font-size: 16px;
+    padding: 0px 10px;
+    width: 960px;
+    padding-left: 200px;
 }
 
-img {
-    display: block;
+#navbar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right: solid 1px;
 }
 
-#image {
-    max-width: 100%;
+#navbar header {
+    color: black;
 }
 
-.text-center {
-    text-align: center;
+#navbar li {
+    color: black;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+#navbar a {
+    text-decoration: underline;
 }
 
-#img-div {
-    display: grid;
-    place-items: center;
+#navbar a:hover {
+    color: black;
 }
 
-#image {
-    max-width: 100% !important;
+header {
+    color: black;
+    margin: 5px;
+    text-align: start;
+    font-size: 1.8em;
+    font-weight: thin;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
+code {
+  background: #ffeff0;
+  word-wrap: break-word;
+  box-decoration-break: clone;
+  padding: .1rem .3rem .2rem;
+  border-radius: .2rem;
+  font-size: 12px;
+  display: block;
 }
 
-figcaption {
-    margin-top: 5px;
+code {
+    font-family: monospace;
+}
+
+@media only screen and (max-width: 600px) {
+    #main-doc {
+        font-size: 16px;
+        margin-left: 0px;
+        padding: 0px 10px;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    #navbar {
+        padding-top: 20px;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: auto;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        overflow-x: hidden;
+        border-right: 0px;
+        border-bottom: solid 1px;
+    }
+
+    #navbar header {
+        color: black;
+    }
+
+    #navbar li {
+        color: black;
+    }
+
+    #navbar a {
+        text-decoration: underline;
+    }
+
+    #navbar a:hover {
+        color: black;
+    }
+
+    header {
+        color: black;
+        margin: 5px;
+        text-align: start;
+        font-size: 1.8em;
+        font-weight: thin;
+    }
 }
